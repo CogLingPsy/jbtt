@@ -1,0 +1,42 @@
+[
+  {
+    "word": "me",
+    "posTag": "NN",
+    "changeTo": "PRP"
+  },
+  {
+    "word": "actor",
+    "posTag": "JJ",
+    "changeTo": "NN"
+  },
+  {
+    "word": "main",
+    "posTag": "NNP",
+    "changeTo": "JJ"
+  },
+  {
+    "word": "closer",
+    "posTag": "NN",
+    "changeTo": "JJR"
+  },
+  {
+    "word": "boy",
+    "posTag": "NNP",
+    "changeTo": "NN"
+  },
+  {
+    "word": "magnificent",
+    "posTag": "NN",
+    "changeTo": "JJ"
+  },
+  {
+    "word": "it",
+    "posTag": "NN",
+    "changeTo": "IT"
+  },
+  {
+    "word": "table",
+    "posTag": "JJ",
+    "changeTo": "NN"
+  }
+]

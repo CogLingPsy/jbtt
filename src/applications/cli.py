@@ -28,7 +28,8 @@ def cli_text(text: str, input_file: IO):
     for results in answer:
         sentence = results['text']
         if not results['suggestions']:
-            click.secho(f"Sentence '{sentence}' is completely fine!", fg='green')
+            if sentence.strip() != "":
+                click.secho(f"Sentence '{sentence}' is completely fine!", fg='green')
         else:
             click.secho(f"Can suggest improvements for '{sentence}'", fg='blue')
             for suggestion in results['suggestions']:

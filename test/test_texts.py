@@ -190,7 +190,7 @@ def test_server():
         client = app.test_client()
     with allure.step(f"Execute POST request"):
         request_text = {"text": "It’s beautiful city. He is actor."}
-        response = client.post('/processText',
+        response = client.post('/api/processText',
                                json=request_text)
         allure.attach(body=json.dumps(request_text), name='Text to process',
                       attachment_type=allure.attachment_type.JSON)

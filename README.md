@@ -23,7 +23,7 @@ Please, install requirements first, e.g. `pip install -r requirements.txt` (see 
 The whole idea of inserting missing article is based on understanding whether a noun group contains some determinative or not. On the next scheme it is represented which elements could occur in NP and its positions.
 ![img_3.png](scheme.png) <br> [see at http://www.ugr.es/~ftsaez/morfo/nouns.pdf]
 
-As it is described in scheme - determinative goes first in every NP. So that the mechanism is to extract NP from sentence, indicate a determinative, if doesn't exist - add an article in first position.<br>
+As it is described in scheme - determinative goes first in every NP. So that the mechanism is to extract NP from sentence, indicate a determinative, if itl doesn't exist - add an article in first position.<br>
 We don't consider now all possible elements of a noun group, e.g. complement (which in most cases implies usage of definite article) or clauses as epithets or classifiers.
 In next section we describe which cases are covered.
 

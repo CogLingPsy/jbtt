@@ -38,5 +38,10 @@
     "word": "table",
     "posTag": "JJ",
     "changeTo": "NN"
+  },
+  {
+    "word": "better",
+    "posTag": "RB",
+    "changeTo": "JJR"
   }
 ]

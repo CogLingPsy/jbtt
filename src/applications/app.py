@@ -18,7 +18,7 @@ def main_page():
     return redirect("http://127.0.0.1:5000/static/index.html", code=302)
 
 
-@app.post('/processText')
+@app.post('/api/processText')
 def post_process_text():
     """
     Endpoint to process text e.g. in Postman

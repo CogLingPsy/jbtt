@@ -41,8 +41,8 @@ The grammar uses abbreviations in according with nltk library POS tagging https:
 ```
                 EXIND: {<DT|EX|IT>+<VBZ|VBD>+<DT>?<JJ>*<NN>+}
                 VBPART: {<VBZ|VBD><NN>+<IN>+}
-                NPP: {<DT>+<NN>?<IN>?<CD>?<DT|PRP\$>?<JJS|JJ>*<NN|NNS>+}
-                NP: {<CD>?<DT|PRP\$>?<JJS|JJ>*<NN|NNS>+}
+                NPP: {<DT>+<NN>?<IN>?<CD>?<DT|PRP\$>?<JJS|JJ|JJR>*<NN|NNS>+}
+                NP: {<CD>?<DT|PRP\$>?<JJS|JJ|JJR>*<NN|NNS>+}
 ```
 
 Order of rules means prioritization: first match is selected, if selected others are not to process.  
@@ -57,7 +57,7 @@ It goes before NP extracting because there are similar constructions noun+prepos
 while this particular case doesn't. 
 
 **NP** means a noun group which can include different qualifiers. It definitely includes a noun itself, could include from 0 to infinity adjectives,
-some sort of determiner (article, posessive pronoun, cardinal digit). Possible examples could be:
+some sort of determiner (article, possessive pronoun, cardinal digit). Possible examples could be:
 
 - kittens
 - adorable kittens

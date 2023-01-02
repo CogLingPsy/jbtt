@@ -4,6 +4,7 @@ from typing import Dict, List, Tuple
 from src.processing.models.Replace import Replace
 from nltk import sent_tokenize
 
+
 def fix_pos_tagging(tags: List[Tuple[str, str]], rules: List[Dict]) -> List[Dict]:
     """
     Loads a dictionary of words which can have wrong POS tag after tagging.

@@ -57,8 +57,8 @@ def create_tree_from_grammar(tags: Tree) -> Tree:
     pattern: str = """
                 EXIND: {<DT|EX|IT>+<VBZ|VBD>+<DT>?<JJ>*<NN>+}
                 VBPART: {<VBZ|VBD><NN>+<IN>+}
-                NPP: {<DT>+<NN>?<IN>?<CD>?<DT|PRP\$>?<JJS|JJ>*<NN|NNS>+}
-                NP: {<CD>?<DT|PRP\$>?<JJS|JJ>*<NN|NNS>+}
+                NPP: {<DT>+<NN>?<IN>?<CD>?<DT|PRP\$>?<JJS|JJ|JJR>*<NN|NNS>+}
+                NP: {<CD>?<DT|PRP\$>?<JJS|JJ|JJR>*<NN|NNS>+}
                 """
     cp: nltk.RegexpParser = nltk.RegexpParser(pattern)
     result: Tree = cp.parse(tags)

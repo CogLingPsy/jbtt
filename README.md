@@ -17,6 +17,8 @@ Applications:
 - click==8.1.3
 - Flask==2.2.2
 
+Please, install requirements first, e.g. `pip install -r requirements.txt` (see also Gutenberg below)
+
 ### Grammar Rules:
 The whole idea of inserting missing article is based on understanding whether a noun group contains some determinative or not. On the next scheme it is represented which elements could occur in NP and its positions.
 ![img_3.png](scheme.png) <br> [see at http://www.ugr.es/~ftsaez/morfo/nouns.pdf]
